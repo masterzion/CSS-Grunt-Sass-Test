@@ -1,0 +1,120 @@
+
+@import 'commom';
+@import "compass/css3";
+
+#mainbox {
+  @extend .centered;
+  height           : $mainheight;
+  width            : $mainwidth;
+  margin-top       : 258px;
+  background-color : $bgtextcolor;
+
+  .l-bigimage {
+    @extend .alignleft;
+    @extend .midlayerwidth;
+    margin-top  : -1px; // first pixel is transparent
+    display     :  none;
+    
+  }
+
+
+  // *** Image container  *** 
+  .img-categories {
+    @extend .alignleft;
+
+    // fade effect
+    @include opacity(0.3);
+    @include transition-property(opacity);
+    @include transition-duration(1s);
+
+    margin-top          : -1px; // first pixel is transparent
+    background-position : left top;
+    width               : $imagewidth;
+    height              : $imageheight;
+    font-family         : 'Warface_UI';
+    font-size           : $homeiconssize;
+    cursor              : pointer;
+
+    .centertext1 {
+      @include centertext(260px); // one line - forced top position
+    }
+
+    .centertext2 {
+      @include centertext;  // two lines position -  top position
+    }
+  }
+
+  //used in fade effect
+  .img-categories:hover {
+      @include opacity(0.9);
+  }
+
+  // *** right bar *** 
+  .rightbar {
+    @extend .alignleft;
+    width            : $sidebarwidth;
+    height           : $imageheight; 
+
+    // *** close button ***    
+    #closebtn {
+       padding-right : $textmargin ;
+       top           : 40px;
+       position      : relative;
+       float         : right;
+
+       #closebtn-img {
+        span {  
+            display : block;
+            width   : 11px;
+            height  : 11px;
+        } 
+        display     : none;
+        cursor      : pointer;
+       }
+    }
+
+    // *** text area *** 
+    .sidebartext {
+       @extend .textmargin;
+       font-family  : 'DINNextLTPro Light';
+       line-height  : $lineheight;
+       text-align   : justify;
+    }
+
+    #rightbar-header {
+          @extend .sidebartext;
+          font-size   : $titlesize;
+          padding-top : 80px;
+    }    
+
+    #rightbar-text {
+          @extend .sidebartext;
+          font-size   : $textsize;
+          padding-top : 45px;
+    }
+
+    // *** links area  *** 
+    #sidelink-categories {
+       span {
+        padding-right: 30px;
+       }
+       @extend .sidelinks;
+       top   : 400px;
+    }
+
+    #sidelink-home {
+       @extend .sidelinks;
+       top          : 350px;
+       font-family  : 'DINNextLTPro Light';
+       font-size    : $textsize;
+       border       : -10px;
+       p {
+            text-align : right;
+            width      : 330px;
+       }
+    }
+
+
+  }
+
+}

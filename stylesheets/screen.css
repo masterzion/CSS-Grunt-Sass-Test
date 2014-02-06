@@ -1,0 +1,347 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/***** SPRITES *****/
+@font-face {
+  font-family: "DINNextLTPro Light";
+  src: url('fonts/DINNextLTPro-Light.ttf') format('truetype'), url('fonts/DINNextLTPro-Light.otf') format('opentype'), url('fonts/DINNextLTPro-Light.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "AgencyFB Reg";
+  src: url('fonts/agency_fb.ttf') format('truetype'), url('fonts/agency_fb.otf') format('opentype'), url('fonts/agency_fb.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "Warface_UI";
+  src: url('fonts/Warface_GFace_UI_07_punctuation.ttf') format('truetype'), url('fonts/Warface_GFace_UI_07_punctuation.otf') format('opentype'), url('fonts/Warface_GFace_UI_07_punctuation.eot') format('embedded-opentype');
+}
+
+/***** SPRITES *****/
+/* line 58, icons/*.png */
+.icons-sprite, .icons-arrow_left, .icons-arrow_right, .icons-close {
+  background: url('../images/icons-s0839fc7d31.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow_left {
+  background-position: 0 -21px;
+}
+
+/* line 60, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow_right {
+  background-position: 0 -53px;
+}
+
+/* line 60, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close {
+  background-position: 0 0;
+}
+
+/* line 14, ../sass/base.scss */
+body {
+  background-color: #404040;
+  color: #FFF;
+}
+
+/***** VARIABLES *****/
+/***** COMMOM STYLES *****/
+/* line 25, ../sass/commom.scss */
+.is-active {
+  color: #e64300 !important;
+}
+
+/* line 29, ../sass/commom.scss */
+.alignleft, #mainbox .l-bigimage, #mainbox .img-categories, #mainbox .rightbar {
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+/* line 35, ../sass/commom.scss */
+.positionzero, .centered, #header, #mainbox, #mainbox .img-categories .centertext1, #mainbox .img-categories .centertext2 {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 42, ../sass/commom.scss */
+.centered, #header, #mainbox {
+  margin: auto;
+  position: absolute;
+  border: 0px;
+}
+
+/* line 50, ../sass/commom.scss */
+.sidelinks, #mainbox .rightbar #sidelink-categories, #mainbox .rightbar #sidelink-home {
+  position: absolute;
+  display: none;
+}
+/* line 55, ../sass/commom.scss */
+.sidelinks p, #mainbox .rightbar #sidelink-categories p, #mainbox .rightbar #sidelink-home p {
+  cursor: pointer;
+  line-height: 30px;
+}
+
+/* line 62, ../sass/commom.scss */
+.midlayerwidth, #mainbox .l-bigimage {
+  width: 774px;
+  height: 519px;
+  background-position: left top;
+}
+
+/* line 68, ../sass/commom.scss */
+.textmargin, .sidelinks, #mainbox .rightbar #sidelink-categories, #mainbox .rightbar #sidelink-home, #mainbox .rightbar .sidebartext, #mainbox .rightbar #rightbar-header, #mainbox .rightbar #rightbar-text {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* line 6, ../sass/header.scss */
+#header #txtheader1 {
+  padding-top: 20px;
+  font-size: 100px;
+  font-family: 'Warface_UI';
+  text-align: center;
+}
+/* line 13, ../sass/header.scss */
+#header #txtheader2 {
+  padding-top: 17px;
+  font-size: 50.09px;
+  font-family: 'AgencyFB Reg';
+  text-align: center;
+}
+
+/***** VARIABLES *****/
+/***** COMMOM STYLES *****/
+/* line 25, ../sass/commom.scss */
+.is-active {
+  color: #e64300 !important;
+}
+
+/* line 29, ../sass/commom.scss */
+.alignleft, #mainbox .l-bigimage, #mainbox .img-categories, #mainbox .rightbar {
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+/* line 35, ../sass/commom.scss */
+.positionzero, .centered, #header, #mainbox, #mainbox .img-categories .centertext1, #mainbox .img-categories .centertext2 {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 42, ../sass/commom.scss */
+.centered, #header, #mainbox {
+  margin: auto;
+  position: absolute;
+  border: 0px;
+}
+
+/* line 50, ../sass/commom.scss */
+.sidelinks, #mainbox .rightbar #sidelink-categories, #mainbox .rightbar #sidelink-home {
+  position: absolute;
+  display: none;
+}
+/* line 55, ../sass/commom.scss */
+.sidelinks p, #mainbox .rightbar #sidelink-categories p, #mainbox .rightbar #sidelink-home p {
+  cursor: pointer;
+  line-height: 30px;
+}
+
+/* line 62, ../sass/commom.scss */
+.midlayerwidth, #mainbox .l-bigimage {
+  width: 774px;
+  height: 519px;
+  background-position: left top;
+}
+
+/* line 68, ../sass/commom.scss */
+.textmargin, .sidelinks, #mainbox .rightbar #sidelink-categories, #mainbox .rightbar #sidelink-home, #mainbox .rightbar .sidebartext, #mainbox .rightbar #rightbar-header, #mainbox .rightbar #rightbar-text {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* line 5, ../sass/body.scss */
+#mainbox {
+  height: 518px;
+  width: 1275px;
+  margin-top: 258px;
+  background-color: black;
+}
+/* line 12, ../sass/body.scss */
+#mainbox .l-bigimage {
+  margin-top: -1px;
+  display: none;
+}
+/* line 22, ../sass/body.scss */
+#mainbox .img-categories {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  margin-top: -1px;
+  background-position: left top;
+  width: 258px;
+  height: 519px;
+  font-family: 'Warface_UI';
+  font-size: 40px;
+  cursor: pointer;
+}
+/* line 38, ../sass/body.scss */
+#mainbox .img-categories .centertext1 {
+  width: 100%;
+  padding-top: 260px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+/* line 42, ../sass/body.scss */
+#mainbox .img-categories .centertext2 {
+  width: 100%;
+  padding-top: 240px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+/* line 48, ../sass/body.scss */
+#mainbox .img-categories:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+/* line 53, ../sass/body.scss */
+#mainbox .rightbar {
+  width: 500px;
+  height: 519px;
+}
+/* line 59, ../sass/body.scss */
+#mainbox .rightbar #closebtn {
+  padding-right: 48px;
+  top: 40px;
+  position: relative;
+  float: right;
+}
+/* line 65, ../sass/body.scss */
+#mainbox .rightbar #closebtn #closebtn-img {
+  display: none;
+  cursor: pointer;
+}
+/* line 66, ../sass/body.scss */
+#mainbox .rightbar #closebtn #closebtn-img span {
+  display: block;
+  width: 11px;
+  height: 11px;
+}
+/* line 77, ../sass/body.scss */
+#mainbox .rightbar .sidebartext, #mainbox .rightbar #rightbar-header, #mainbox .rightbar #rightbar-text {
+  font-family: 'DINNextLTPro Light';
+  line-height: 30px;
+  text-align: justify;
+}
+/* line 84, ../sass/body.scss */
+#mainbox .rightbar #rightbar-header {
+  font-size: 26px;
+  padding-top: 80px;
+}
+/* line 90, ../sass/body.scss */
+#mainbox .rightbar #rightbar-text {
+  font-size: 20px;
+  padding-top: 45px;
+}
+/* line 97, ../sass/body.scss */
+#mainbox .rightbar #sidelink-categories {
+  top: 400px;
+}
+/* line 98, ../sass/body.scss */
+#mainbox .rightbar #sidelink-categories span {
+  padding-right: 30px;
+}
+/* line 105, ../sass/body.scss */
+#mainbox .rightbar #sidelink-home {
+  top: 350px;
+  font-family: 'DINNextLTPro Light';
+  font-size: 20px;
+  border: -10px;
+}
+/* line 111, ../sass/body.scss */
+#mainbox .rightbar #sidelink-home p {
+  text-align: right;
+  width: 330px;
+}

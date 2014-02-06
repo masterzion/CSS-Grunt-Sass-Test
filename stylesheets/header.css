@@ -1,0 +1,67 @@
+/***** VARIABLES *****/
+/***** COMMOM STYLES *****/
+/* line 25, ../sass/commom.scss */
+.is-active {
+  color: #e64300 !important;
+}
+
+/* line 29, ../sass/commom.scss */
+.alignleft {
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+/* line 35, ../sass/commom.scss */
+.positionzero, .centered, #header {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 42, ../sass/commom.scss */
+.centered, #header {
+  margin: auto;
+  position: absolute;
+  border: 0px;
+}
+
+/* line 50, ../sass/commom.scss */
+.sidelinks {
+  position: absolute;
+  display: none;
+}
+/* line 55, ../sass/commom.scss */
+.sidelinks p {
+  cursor: pointer;
+  line-height: 30px;
+}
+
+/* line 62, ../sass/commom.scss */
+.midlayerwidth {
+  width: 774px;
+  height: 519px;
+  background-position: left top;
+}
+
+/* line 68, ../sass/commom.scss */
+.textmargin, .sidelinks {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* line 6, ../sass/header.scss */
+#header #txtheader1 {
+  padding-top: 20px;
+  font-size: 100px;
+  font-family: 'Warface_UI';
+  text-align: center;
+}
+/* line 13, ../sass/header.scss */
+#header #txtheader2 {
+  padding-top: 17px;
+  font-size: 50.09px;
+  font-family: 'AgencyFB Reg';
+  text-align: center;
+}

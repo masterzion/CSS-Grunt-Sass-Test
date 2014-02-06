@@ -1,0 +1,18 @@
+@import "compass/css3";
+
+/***** SPRITES *****/
+@include font-face("DINNextLTPro Light", font-files("DINNextLTPro-Light.ttf", "DINNextLTPro-Light.otf", "DINNextLTPro-Light.eot"));
+@include font-face("AgencyFB Reg", font-files("agency_fb.ttf", "agency_fb.otf", "agency_fb.eot"));
+@include font-face("Warface_UI", font-files("Warface_GFace_UI_07_punctuation.ttf", "Warface_GFace_UI_07_punctuation.otf", "Warface_GFace_UI_07_punctuation.eot"));
+
+
+/***** SPRITES *****/
+$icons-spacing: 10px;
+@import "icons/*.png";
+@include all-icons-sprites;
+
+body {  
+    background-color : #404040;  
+    color            : #FFF;  
+}
+

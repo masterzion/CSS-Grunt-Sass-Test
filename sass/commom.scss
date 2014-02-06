@@ -1,0 +1,81 @@
+/***** VARIABLES *****/
+$bgtextcolor      : #000;
+
+$imageheight      : 519px;
+$imagewidth       : 258px;
+
+$sidebarwidth     : 500px;
+
+$textsize         : 20px;
+$titlesize        : 26px;
+
+$textmargin       : 48px;
+$lineheight       : 30px;
+
+$homeiconssize    : 40px;
+
+$mainheight       : 518px;
+
+$l-bigimage-width : ($imagewidth * 3);
+
+$mainwidth        : $l-bigimage-width + $sidebarwidth+1;
+
+
+/***** COMMOM STYLES *****/
+.is-active {
+  color : #e64300 !important;
+}
+
+.alignleft {
+  margin   : 0;
+  position : relative;
+  float    : left;
+}
+
+.positionzero {
+  top    : 0;
+  left   : 0; 
+  bottom : 0; 
+  right  : 0;
+}
+
+.centered {
+  @extend .positionzero;
+  margin   : auto;
+  position : absolute;
+  border   : 0px;
+}
+
+
+.sidelinks {
+   @extend .textmargin;
+   position    : absolute;
+   display     :  none;
+
+   p {
+    cursor       : pointer;
+    line-height  : $lineheight;
+   }
+
+}
+
+.midlayerwidth {
+    width               : $l-bigimage-width;
+    height              : $imageheight;
+    background-position : left top;
+}
+
+.textmargin {
+       margin-left  : $textmargin;
+       margin-right : $textmargin;
+}
+
+@mixin centertext ( $height : 240px) {
+  @extend .positionzero;
+  width        : 100%;
+  padding-top  : $height;
+  overflow     : auto;
+  margin       : auto;
+  position     : absolute;
+  text-align   : center;
+}

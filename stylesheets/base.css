@@ -1,0 +1,42 @@
+/***** SPRITES *****/
+@font-face {
+  font-family: "DINNextLTPro Light";
+  src: url('fonts/DINNextLTPro-Light.ttf') format('truetype'), url('fonts/DINNextLTPro-Light.otf') format('opentype'), url('fonts/DINNextLTPro-Light.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "AgencyFB Reg";
+  src: url('fonts/agency_fb.ttf') format('truetype'), url('fonts/agency_fb.otf') format('opentype'), url('fonts/agency_fb.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: "Warface_UI";
+  src: url('fonts/Warface_GFace_UI_07_punctuation.ttf') format('truetype'), url('fonts/Warface_GFace_UI_07_punctuation.otf') format('opentype'), url('fonts/Warface_GFace_UI_07_punctuation.eot') format('embedded-opentype');
+}
+
+/***** SPRITES *****/
+/* line 58, icons/*.png */
+.icons-sprite, .icons-arrow_left, .icons-arrow_right, .icons-close {
+  background: url('../images/icons-s0839fc7d31.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow_left {
+  background-position: 0 -21px;
+}
+
+/* line 60, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-arrow_right {
+  background-position: 0 -53px;
+}
+
+/* line 60, ../../../../../../../var/lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-close {
+  background-position: 0 0;
+}
+
+/* line 14, ../sass/base.scss */
+body {
+  background-color: #404040;
+  color: #FFF;
+}

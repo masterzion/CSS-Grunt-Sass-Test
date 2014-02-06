@@ -1,0 +1,21 @@
+@import 'commom';
+
+#header {
+   @extend .centered;
+
+  #txtheader1 {
+    padding-top  : 20px;
+    font-size    : 100px;
+    font-family  : 'Warface_UI';
+    text-align   : center;
+  }
+
+  #txtheader2 {
+    padding-top : 17px;
+    font-size   : 50.09px;
+    font-family : 'AgencyFB Reg';
+    text-align  : center;
+    
+  }
+
+}

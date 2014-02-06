@@ -1,0 +1,167 @@
+/***** VARIABLES *****/
+/***** COMMOM STYLES *****/
+/* line 25, ../sass/commom.scss */
+.is-active {
+  color: #e64300 !important;
+}
+
+/* line 29, ../sass/commom.scss */
+.alignleft, #mainbox .l-bigimage, #mainbox .img-categories, #mainbox .rightbar {
+  margin: 0;
+  position: relative;
+  float: left;
+}
+
+/* line 35, ../sass/commom.scss */
+.positionzero, .centered, #mainbox, #mainbox .img-categories .centertext1, #mainbox .img-categories .centertext2 {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 42, ../sass/commom.scss */
+.centered, #mainbox {
+  margin: auto;
+  position: absolute;
+  border: 0px;
+}
+
+/* line 50, ../sass/commom.scss */
+.sidelinks, #mainbox .rightbar #sidelink-categories, #mainbox .rightbar #sidelink-home {
+  position: absolute;
+  display: none;
+}
+/* line 55, ../sass/commom.scss */
+.sidelinks p, #mainbox .rightbar #sidelink-categories p, #mainbox .rightbar #sidelink-home p {
+  cursor: pointer;
+  line-height: 30px;
+}
+
+/* line 62, ../sass/commom.scss */
+.midlayerwidth, #mainbox .l-bigimage {
+  width: 774px;
+  height: 519px;
+  background-position: left top;
+}
+
+/* line 68, ../sass/commom.scss */
+.textmargin, .sidelinks, #mainbox .rightbar #sidelink-categories, #mainbox .rightbar #sidelink-home, #mainbox .rightbar .sidebartext, #mainbox .rightbar #rightbar-header, #mainbox .rightbar #rightbar-text {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+/* line 5, ../sass/body.scss */
+#mainbox {
+  height: 518px;
+  width: 1275px;
+  margin-top: 258px;
+  background-color: black;
+}
+/* line 12, ../sass/body.scss */
+#mainbox .l-bigimage {
+  margin-top: -1px;
+  display: none;
+}
+/* line 22, ../sass/body.scss */
+#mainbox .img-categories {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  margin-top: -1px;
+  background-position: left top;
+  width: 258px;
+  height: 519px;
+  font-family: 'Warface_UI';
+  font-size: 40px;
+  cursor: pointer;
+}
+/* line 38, ../sass/body.scss */
+#mainbox .img-categories .centertext1 {
+  width: 100%;
+  padding-top: 260px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+/* line 42, ../sass/body.scss */
+#mainbox .img-categories .centertext2 {
+  width: 100%;
+  padding-top: 240px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+}
+/* line 48, ../sass/body.scss */
+#mainbox .img-categories:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
+}
+/* line 53, ../sass/body.scss */
+#mainbox .rightbar {
+  width: 500px;
+  height: 519px;
+}
+/* line 59, ../sass/body.scss */
+#mainbox .rightbar #closebtn {
+  padding-right: 48px;
+  top: 40px;
+  position: relative;
+  float: right;
+}
+/* line 65, ../sass/body.scss */
+#mainbox .rightbar #closebtn #closebtn-img {
+  display: none;
+  cursor: pointer;
+}
+/* line 66, ../sass/body.scss */
+#mainbox .rightbar #closebtn #closebtn-img span {
+  display: block;
+  width: 11px;
+  height: 11px;
+}
+/* line 77, ../sass/body.scss */
+#mainbox .rightbar .sidebartext, #mainbox .rightbar #rightbar-header, #mainbox .rightbar #rightbar-text {
+  font-family: 'DINNextLTPro Light';
+  line-height: 30px;
+  text-align: justify;
+}
+/* line 84, ../sass/body.scss */
+#mainbox .rightbar #rightbar-header {
+  font-size: 26px;
+  padding-top: 80px;
+}
+/* line 90, ../sass/body.scss */
+#mainbox .rightbar #rightbar-text {
+  font-size: 20px;
+  padding-top: 45px;
+}
+/* line 97, ../sass/body.scss */
+#mainbox .rightbar #sidelink-categories {
+  top: 400px;
+}
+/* line 98, ../sass/body.scss */
+#mainbox .rightbar #sidelink-categories span {
+  padding-right: 30px;
+}
+/* line 105, ../sass/body.scss */
+#mainbox .rightbar #sidelink-home {
+  top: 350px;
+  font-family: 'DINNextLTPro Light';
+  font-size: 20px;
+  border: -10px;
+}
+/* line 111, ../sass/body.scss */
+#mainbox .rightbar #sidelink-home p {
+  text-align: right;
+  width: 330px;
+}
